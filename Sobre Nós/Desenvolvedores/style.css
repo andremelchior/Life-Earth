@@ -1,0 +1,71 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+.team-section{
+	overflow: hidden;
+	text-align: center;
+	padding: 100px;
+
+}
+.team-section h1 {
+	text-transform: uppercase;
+	margin-bottom: 60px;
+	color: white;
+	font-size: 40px;
+
+}
+.border {
+	display: block;
+	margin: auto;
+	width: 250px;
+	height: 3px;
+	background: #00a86b;
+}
+.ps {
+	margin-bottom: 40px;
+	margin-top: 60px;
+}
+.ps a {
+	display: inline-block;
+	margin: 0 30px;
+	width: 160px;
+	height: 160px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.ps a img {
+	width: 100%;
+	filter: grayscale(100%);
+}
+.ps a:hover > img {
+	filter: none;
+}
+.section {
+	width: 600px;
+	margin: auto;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	height: 0;
+	overflow: hidden; 
+}
+.section:target {
+	height: auto;
+
+}
+.name {
+	display: block;
+	margin-bottom: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 22px;
+
+}
+.section p {
+	margin-top: 40px;
+}
+body{
+	background-color: #34495e;
+}

@@ -1,0 +1,489 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin:0 auto;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+ul {
+	list-style: none;
+	top: 0px;
+	width: 100%;
+	position: absolute;
+}
+
+.img-menu {
+	width: 40px;
+	cursor: pointer;
+    margin-top: 10px;
+	border-radius: 50%;
+	margin: 10px;
+}
+
+input[type="checkbox"] {
+	display: none;
+} 
+
+nav {
+	background: rgba(16,16,16,.5);
+	width: 0px;
+	height: 99%; /*Altura da nav do menu*/
+	position: absolute;
+	z-index: 9999;
+	left: -6px; /*ajustar para direita ou esquerda a div do menu*/
+	transition: all .7s; /*tempo de entrada e saida do menu*/
+	padding-bottom: -100px;/*nao esqueça*/
+	border-radius: 55px;
+	border-style: groove; /*borda da div do menu*/
+	margin-top: 2px;
+
+}
+
+nav ul li {
+	display: none;
+}
+
+nav ul {
+	margin-top: 100px;
+}
+
+input[type="checkbox"]:checked ~ nav{
+	width: 350px;
+}
+
+input[type="checkbox"]:checked ~ nav ul li{
+	display: block;
+}
+
+a {
+	display: block;
+	padding:20px 5px; 
+	color: white;
+}
+
+.a-1 {
+	margin: 4px;
+	font-size: 20px;
+}
+
+.a-1:hover {
+	background-color: #ffffff; /*rgb(176,224,230)*/
+	color: black;
+    width: 338px;
+}
+
+label {
+	z-index: 999999;
+	padding: 15px;
+	position: absolute;
+
+}
+
+ul {
+	padding: 0px!important;
+}
+
+.menu-principal {
+	width: 100%;
+	background: #070709; 
+	height: 93px;
+}
+
+.carrossel {
+	height: 450px;
+	width: 60px;
+}
+
+.carrossel:focus {
+	outline: 0;
+}
+
+main, .content {
+	margin: 0 auto;
+	width: 970px;
+	position: relative;
+}
+
+.logo-teste {
+	height: 70px;
+	width: 250px;
+}
+
+.logo {
+	padding: 1%;
+	width: 70%;
+}
+
+.redes-sociais ul li {
+	display: inline-block; /*Para tirar as bolinhas de marcação*/
+	float: left;
+	list-style: none; /*ver*/
+	margin-left: 15px; /*15px*/
+	position: relative;
+	margin-top: 0px;
+}
+
+.redes-sociais ul li a:hover{
+	background-color: transparent;
+}
+
+.redes-sociais {
+	width: 23%; 
+	float: right;
+	margin-top: 20px;
+	margin-right: 2%;
+}
+
+.redes-sociais ul {
+	width: 30%;
+}
+.rede {
+	cursor: default;
+}
+
+.header-2 {
+	background-color: #FFFFFF;
+	width: 980px;
+	margin: 0 auto;
+	padding: 16px; /*Para centralizar em cima da borda*/
+}
+
+.header-2 ul{
+	width: 50%;
+}
+
+.menu-urls {
+	height: 80px;
+	border-bottom: 4px solid #e3efef; /*EFEFEF*/ /*AQUI DA O ESPAÇAMENTO DA BORDA DO MENU VERDE*/
+}
+
+.menu ul li {
+	display: inline-block;
+	color: #8B8B8B;
+	margin-left: 15px;
+	height: 49px;
+}
+
+.menu ul li a:hover { 
+	color: #32cd32;
+	background-color: white;
+	border-bottom: 3px solid #32cd32; /*Invés do solid tbm pode colocar dotted ou dashed*/
+	transition: .3s;
+}
+
+.menu ul li a {
+	color: #8B8B8B; /*Cor da fonte*/
+	text-decoration: none; /*Para tirar o sobriamento*/
+	font-size: 18px; /*Tamanho da Fonte*/
+	text-transform: uppercase; /*Para deixar estilo e a fonte maiscula*/ 
+}
+.menu {
+	width: 70%;
+	float: left;
+}
+
+input::-webkit-calendar-picker-indicator {
+  display: none;
+  background-attachment: fixed;
+}
+
+.busca {
+	width: 30%;
+	float: right; /*Flutuar para o lado*/
+	text-align: center; /*Centralizar a barra de pesquisa*/
+}
+
+.busca input { /*Para separar pra depois modificar outras coisa*/
+	border:0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	background-image: url(../IMG/icone-search.png);
+	background-repeat: no-repeat;
+	background-position: 96%;
+	height: 5px; /*Para dar espaço na altura da pesquisa*/
+	padding: 15px;
+	width: 190px;
+	margin-top: 6px; /*Posicionar no meio a barra de pesquisa*/
+	background-position: 96%;
+	border: 2px solid #32cd32;
+	border-radius: 30px;
+	outline: none;
+}
+
+.col-100 { /*Para colocar a porcentagem da coluna em 100%*/
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+button.slick-prev {
+	font-size: 0px; /*diminuir a fonte*/
+	border:none; /*Para tirar a borda do botão padrão*/
+	width: 25px; /*30px para prev e next*/
+	height: 51px; /*30 para prev e next*/
+	background-color: transparent; 
+	background-image: url(../IMG/prev1.png);
+	position: absolute;
+	z-index: 9;
+	top: 43%; /*Para posicionar a seta no meio*/
+	left: 5%; /*Para dar espaçamento entre a seta e a margem do site*/
+}
+
+button.slick-next {
+	font-size: 0px; /*diminuir a fonte*/
+	border:none; /*Para tirar a borda do botão padrão*/
+	width: 25px;
+	height: 51px;
+	background-color: transparent; 
+	background-image: url(../IMG/next1.png);
+	position: absolute;
+	z-index: 9;
+	top: 43%; /*Para posicionar a seta no meio*/
+	right: 5%; /*Para dar espaçamento entre a seta e a margem do site*/
+}
+
+.slick-list {
+	width: 100%!important;
+}
+
+.slick-initialized {
+	overflow: hidden;
+}
+
+.slick-dots li button {
+	font-size: 0px;
+	border: 5px solid #FFFFFF;
+	width: 26px;
+	height: 26px;
+	background: transparent;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.slick-dots {
+	margin: 0 auto;
+	width: 50%;
+	position: absolute;
+	left: 47%;
+	top: 440px; /*520*/ /*Aqui é onde fica os 3 botoes*/ 
+}
+
+button:focus {
+	outline: 0;
+}
+
+li.slick-active button {
+	background: #32cd32;
+}
+
+.slick-dots li {
+	padding-left: 10px;
+	display: inline-block;
+}
+
+.texto-destaque {
+	margin-top: 3%;
+	text-align: center;
+}
+
+.texto-destaque strong {
+	color: #646464;
+}
+
+.texto-destaque h1 {
+	/*text-align: center;*/
+	font-size: 35px;
+	text-transform: uppercase;
+	color: #818181;
+
+}
+
+.texto-destaque p {
+	text-align: center;
+	font-size: 16px;
+	color: #9a9a9a;
+}
+
+.col-3 {
+	text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 29%;
+	float: left;
+	position: relative;
+}
+
+.bloco-imagem img {
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	cursor: pointer;
+	margin-top: -20px;
+}
+
+.bloco-imagem {
+	height: 300px;
+	border: 1px solid #c5c5c5;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	margin-left: 10px;
+}
+
+.bloco-imagem b, p {
+	text-align: left;
+}
+
+#icon{
+	width: 175px;
+	height: 165px;
+}
+
+#icon-2 { /*id dos icones*/
+	width: 170px;
+	height: 170px;
+}
+
+#icon-3{
+	width: 150px;
+	height: 160px;
+}
+
+.bloco-texto {
+	margin-top: 4em; /*1*/ /*espaçamento entre as matérias e os logos*/
+}
+.p-1{
+	margin-top: 3px;
+} /*para subir o texto da materia em pixels
+}*/
+
+h3 {
+
+	font-weight: normal!important;
+}
+
+.bloco-imagens-texto {
+	margin-left: -5%;
+	display: block;
+
+}
+
+.bloco-imagens-texto:after {
+	width: 100%;
+	display: inline-block;
+	content: '';
+	height: 85px;
+	background-color: white;
+	margin-top: 1%;
+}
+
+.col-4 {
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+
+.col-4 img {
+	cursor: pointer;
+	margin: 0 auto;
+	padding-top: 1em;
+	vertical-align: middle;
+
+}
+
+.col-4 img:hover {
+	margin-top: 5px!important;
+	position: relative!important;
+}
+.col-4 strong {
+	color: #898989!important;
+}
+
+.bloco-logos {
+	display: block;
+}
+
+/*.footer {
+	background-image: url('../IMG/footer.png');
+	color: #c1c1c1;
+	height: 90px;
+}*/
+
+.footer {
+    background-image: url('../IMG/footer.png');
+    color: #ffffff;
+}
+
+.footer p {
+	/*padding: 1px;*/
+	width: 90%; /***/
+	text-align: left; /***/
+}
+
+.footer h3 {
+    text-align: left;
+}
+
+.footer-2 { /***/
+    background-image: url('../IMG/footer2.png');
+    color: #c1c1c1;
+    height: 110px;
+}
+.footer-2 address {
+    padding: 43px;
+   
+}
+
+.clock {
+    color: #898989!important;
+}
+
+.clock:before {
+    content: '';
+    width:  15px;
+    height: 15px;
+    display: inline-block;
+    background-image: url('../IMG/clock.png');
+    float: left;
+    background-repeat: no-repeat;
+    padding-left: 5px;
+}
+
+.local:before, .emailico:before, .telefoneico:before {
+    content: '';
+    width:  17px;
+    height: 24px;
+    display: inline-block;
+    float: left;
+    background-repeat: no-repeat;
+    padding-left: 5px;
+}
+
+.local:before {
+    background-image: url('../IMG/local.png');
+} 
+
+.emailico:before {
+    background-image: url('../IMG/emailico.png');
+} 
+
+.telefoneico:before {
+    background-image: url('../IMG/telefoneico.png');
+}  
+
+address {
+	text-align: center;
+}
+
+address strong {
+	color: #00a86b;
+/*	text-shadow: 15px, 15px, 3px;
+*/}
+#inicio{
+	color: #32cd32;
+	border-bottom: 3px solid #32cd32;
+}
